@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import BlogList from "./components/BlogList";
+import { Box } from "@chakra-ui/layout";
+import { useColorModeValue } from "@chakra-ui/color-mode";
 
 function App() {
+  const bg = useColorModeValue("#f8f8fa", "#1a202c");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Box bg={bg}>
+        <Navbar />
+        <div className="content">
+          <Header />
+          <BlogList />
+        </div>
+        <div className="footer">
+          <Footer />
+        </div>
+      </Box>
     </div>
   );
 }
