@@ -3,13 +3,12 @@ import {
   Box,
   chakra,
   Container,
-  Link,
   Stack,
   Text,
   useColorModeValue,
   VisuallyHidden,
 } from "@chakra-ui/react";
-import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaInstagram, FaTwitter } from "react-icons/fa";
 
 const SocialButton = ({ children, label, href }) => {
   return (
@@ -36,8 +35,8 @@ const SocialButton = ({ children, label, href }) => {
 };
 
 export default function Footer() {
-  const bg = useColorModeValue("white", "#1a202c");
-  const color = useColorModeValue("black", "white");
+  // const bg = useColorModeValue("white", "#1a202c");
+  // const color = useColorModeValue("black", "white");
   return (
     <Box>
       <Box

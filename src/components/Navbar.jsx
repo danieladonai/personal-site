@@ -1,6 +1,6 @@
-import { Box, Heading, Flex, Spacer, Image } from "@chakra-ui/react";
+import { Box, Heading, Flex, Spacer } from "@chakra-ui/react";
 import React from "react";
-import favicon from "../img/favicon.png";
+// import favicon from "../img/favicon.png";
 
 function Navbar() {
   return (

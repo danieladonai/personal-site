@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Container, ListItem, UnorderedList } from "@chakra-ui/layout";
+import { Container, ListItem, UnorderedList } from "@chakra-ui/layout";
 
 function BlogList() {
   return (
